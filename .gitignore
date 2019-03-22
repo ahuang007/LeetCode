@@ -1,0 +1,11 @@
+*/LeetCode/Debug
+LeetCode/Debug/*
+*.opensdf
+*.sln
+*.suo
+*.vcxproj
+*.filters
+*.exe
+*.ilk
+*.pdb
+*.idc
