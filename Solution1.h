@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+
 /*
 Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 
@@ -16,5 +17,18 @@ return [0, 1].
 
 vector<int> twoSum(vector<int>& nums, int target) {
 	vector<int> vi;
+	int size = nums.size();
+	bool bResult = false;
+	for(int i = 0; i < size-1; i++){
+		for(int j = i+1 ; j < size; j++){
+			if(nums[i] + nums[j] == target){
+				vi.clear();
+				vi.push_back(i);
+				vi.push_back(j);
+				bResult = true;
+			}
+		}
+		if(bResult) break;
+	}
 	return vi;
 }

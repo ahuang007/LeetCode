@@ -9,3 +9,6 @@ LeetCode/Debug/*
 *.ilk
 *.pdb
 *.idc
+.idea
+CMakeLists.txt
+cmake-build-debug/
