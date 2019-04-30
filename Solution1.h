@@ -1,3 +1,6 @@
+#ifndef TESTCODE_SOLUTION1_H
+#define TESTCODE_SOLUTION1_H
+
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -32,3 +35,5 @@ vector<int> twoSum(vector<int>& nums, int target) {
 	}
 	return vi;
 }
+
+#endif //TESTCODE_SOLUTION1_H
