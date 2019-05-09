@@ -2,10 +2,13 @@
 #include <iostream>
 #include <vector>
 #include "Solution1.h"
+#include "Solution3.h"
+#include <string>
 using namespace std;
 
 int main(){
     cout << "Test Start" << endl;
+    /*
     vector<int> vtArr;
     vtArr.push_back(0);
     vtArr.push_back(4);
@@ -17,6 +20,10 @@ int main(){
     for(vector<int>::iterator iter = vt2.begin(); iter != vt2.end(); iter++){
         cout<<*iter<<endl;
     }
+     */
+
+    string str = "aaaabbcdfghi";
+    cout<<lengthOfLongestSubstring(str)<<endl;
 
     cout << "Test End" << endl;
 
