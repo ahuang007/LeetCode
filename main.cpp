@@ -3,6 +3,7 @@
 #include <vector>
 #include "Solution1.h"
 #include "Solution3.h"
+#include "Solution8.h"
 #include <string>
 using namespace std;
 
@@ -24,6 +25,9 @@ int main(){
 
     string str = "aaaabbcdfghi";
     cout<<lengthOfLongestSubstring(str)<<endl;
+
+    string str2 = "24 with";
+    cout<<myAtoi(str2)<<endl;
 
     cout << "Test End" << endl;
 
