@@ -4,6 +4,7 @@
 #include "Solution1.h"
 #include "Solution3.h"
 #include "Solution8.h"
+#include "Solution9.h"
 #include <string>
 using namespace std;
 
@@ -23,11 +24,18 @@ int main(){
     }
      */
 
+    /*
     string str = "aaaabbcdfghi";
-    cout<<lengthOfLongestSubstring(str)<<endl;
+    //cout<<lengthOfLongestSubstring(str)<<endl;
+     */
 
+    /*
     string str2 = "24 with";
-    cout<<myAtoi(str2)<<endl;
+    //cout<<myAtoi(str2)<<endl;
+     */
+
+    int x = 12321;
+    cout<<"Slution9 result: "<<isPalindrome(x)<<endl;
 
     cout << "Test End" << endl;
 

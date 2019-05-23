@@ -1,6 +1,3 @@
-//
-// Created by Administrator on 2019/5/9.
-//
 
 #ifndef TESTCODE_SOLUTION4_H
 #define TESTCODE_SOLUTION4_H
@@ -87,6 +84,5 @@ int myAtoi(string s) {
     if(!flag && num != INT_MIN) num *= -1;
     return (int)num;
 }
-
 
 #endif //TESTCODE_SOLUTION4_H

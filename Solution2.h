@@ -1,6 +1,3 @@
-//
-// Created by Administrator on 2019/4/30.
-//
 
 #ifndef TESTCODE_SOLUTION2_H
 #define TESTCODE_SOLUTION2_H
