@@ -3,26 +3,26 @@
 #include <vector>
 #include "Solution1.h"
 #include "Solution3.h"
+#include "Solution7.h"
 #include "Solution8.h"
 #include "Solution9.h"
 #include <string>
 using namespace std;
 
 int main(){
-    cout << "Test Start" << endl;
     /*
+    cout << "Test Start" << endl;
     vector<int> vtArr;
     vtArr.push_back(0);
     vtArr.push_back(4);
     vtArr.push_back(3);
     vtArr.push_back(0);
     int target = 0;
-
     vector<int> vt2 = twoSum(vtArr, target);
     for(vector<int>::iterator iter = vt2.begin(); iter != vt2.end(); iter++){
         cout<<*iter<<endl;
     }
-     */
+    */
 
     /*
     string str = "aaaabbcdfghi";
@@ -34,8 +34,11 @@ int main(){
     //cout<<myAtoi(str2)<<endl;
      */
 
-    int x = 12321;
-    cout<<"Slution9 result: "<<isPalindrome(x)<<endl;
+    //int x = 12321;
+    //cout<<"Slution9 result: "<<isPalindrome(x)<<endl;
+
+    int x = 123;
+    cout<<reverse(x)<<endl;
 
     cout << "Test End" << endl;
 
