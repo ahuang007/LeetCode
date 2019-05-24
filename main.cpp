@@ -1,13 +1,16 @@
 
 #include <iostream>
 #include <vector>
+#include <string>
+
 #include "Solution1.h"
 #include "Solution3.h"
 #include "Solution6.h"
 #include "Solution7.h"
 #include "Solution8.h"
 #include "Solution9.h"
-#include <string>
+#include "Solution50.h"
+
 using namespace std;
 
 int main(){
@@ -36,8 +39,10 @@ int main(){
 //    int x = 123;
 //    cout<<reverse(x)<<endl;
 
-    string str = "abcdefghij";
-    cout<<convert(str, 4)<<endl;
+//    string str = "abcdefghij";
+//    cout<<convert(str, 4)<<endl;
+
+    cout<<myPow(2.000, 10)<<endl;
 
     cout << "Test End" << endl;
 
