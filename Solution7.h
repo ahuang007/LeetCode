@@ -8,6 +8,9 @@
 #define TESTCODE_SOLUTION7_H
 
 /*
+
+7 Reverse Integer
+
 Given a 32-bit signed integer, reverse digits of an integer.
 
 Example 1:
@@ -53,11 +56,7 @@ int reverse(int x) {
     for(int i = 0; i < vt_size; i++){
         cout<<vt[i]<<" "<<i<<endl;
         num += vt[i];
-        if(flag){
-            if(num >= INT_MAX) return 0;
-        } else {
-            if(num >= INT_MAX) return 0;
-        }
+        if(num >= INT_MAX) return 0;
         if(i < vt_size-1) num *= 10;
     }
 
