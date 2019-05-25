@@ -5,6 +5,7 @@
 
 #include "Solution1.h"
 #include "Solution3.h"
+#include "Solution5.h"
 #include "Solution6.h"
 #include "Solution7.h"
 #include "Solution8.h"
@@ -42,7 +43,11 @@ int main(){
 //    string str = "abcdefghij";
 //    cout<<convert(str, 4)<<endl;
 
-    cout<<myPow(2.000, 10)<<endl;
+//    cout<<myPow(2.000, 10)<<endl;
+
+    cout<<longestPalindrome("abcba")<<endl;
+    cout<<longestPalindrome("abbbc")<<endl;
+    cout<<longestPalindrome("abc")<<endl;
 
     cout << "Test End" << endl;
 
