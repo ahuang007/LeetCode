@@ -11,6 +11,7 @@
 #include "Solution8.h"
 #include "Solution9.h"
 #include "Solution13.h"
+#include "Solution14.h"
 #include "Solution50.h"
 
 using namespace std;
@@ -48,7 +49,16 @@ int main(){
 
 //    cout<<longestPalindrome("abcba")<<endl;
 
-    cout<<romanToInt("MCMXCIV")<<endl;
+//    cout<<romanToInt("MCMXCIV")<<endl;
+
+    vector<string> vtStr;
+    vtStr.push_back("abcv");
+    vtStr.push_back("abcd");
+    vtStr.push_back("abcx");
+    vtStr.push_back("abdf");
+    vtStr.push_back("abx");
+    vtStr.push_back("c");
+    cout<<longestCommonPrefix(vtStr)<<endl;
 
     cout << "Test End" << endl;
 
