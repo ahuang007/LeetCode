@@ -10,6 +10,7 @@
 #include "Solution7.h"
 #include "Solution8.h"
 #include "Solution9.h"
+#include "Solution13.h"
 #include "Solution50.h"
 
 using namespace std;
@@ -45,9 +46,9 @@ int main(){
 
 //    cout<<myPow(2.000, 10)<<endl;
 
-    cout<<longestPalindrome("abcba")<<endl;
-    cout<<longestPalindrome("abbbc")<<endl;
-    cout<<longestPalindrome("abc")<<endl;
+//    cout<<longestPalindrome("abcba")<<endl;
+
+    cout<<romanToInt("MCMXCIV")<<endl;
 
     cout << "Test End" << endl;
 
