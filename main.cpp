@@ -12,6 +12,7 @@
 #include "Solution9.h"
 #include "Solution13.h"
 #include "Solution14.h"
+#include "Solution15.h"
 #include "Solution50.h"
 
 using namespace std;
@@ -51,14 +52,22 @@ int main(){
 
 //    cout<<romanToInt("MCMXCIV")<<endl;
 
-    vector<string> vtStr;
-    vtStr.push_back("abcv");
-    vtStr.push_back("abcd");
-    vtStr.push_back("abcx");
-    vtStr.push_back("abdf");
-    vtStr.push_back("abx");
-    vtStr.push_back("c");
-    cout<<longestCommonPrefix(vtStr)<<endl;
+//    vector<string> vtStr;
+//    vtStr.push_back("abcv");
+//    vtStr.push_back("abcd");
+//    vtStr.push_back("abcx");
+//    vtStr.push_back("abdf");
+//    vtStr.push_back("abx");
+//    vtStr.push_back("c");
+//    cout<<longestCommonPrefix(vtStr)<<endl;
+
+    //int a[9] = {-1, 0, -1, 1, 2, -4, 0, -2, 1};
+    int a[] = {-1, 0, 1};
+    vector<int> vtArr;
+    for(int i = 0; i < sizeof(a)/sizeof(int); i++){
+        vtArr.push_back(a[i]);
+    }
+    threeSum(vtArr);
 
     cout << "Test End" << endl;
 
