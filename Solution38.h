@@ -34,6 +34,7 @@ Output: "1211"
  */
 
 #include <string>
+#include <sstream>
 
 string countAndSay(int n) {
     if(n <= 0) return "";
@@ -42,7 +43,7 @@ string countAndSay(int n) {
     string str = "1";
     for(int i = 2; i <= n; i++){
         int slen = str.size();
-        string newStr = "";
+        stringstream newStr;
         int count = 0;
         char c = str[0];
         int num = 0;
@@ -50,20 +51,18 @@ string countAndSay(int n) {
             if(str[count] == c){
                 num++;
             } else {
-                newStr += std::to_string(num); // 需要支持c++11
-                newStr += c;
+                newStr<<num;
+                newStr<<c;
                 c = str[count];
                 num = 1;
             }
             count++;
         }
         if(count == slen){
-            newStr += std::to_string(num); // 需要支持c++11
-            newStr += c;
+            newStr<<num;
+            newStr<<c;
         }
-        str = newStr;
-
-        //cout<<"i:"<<i<<" ---- str: "<<str<<" => newStr:"<<newStr<<endl;
+        str = newStr.str();
     }
     return str;
 }

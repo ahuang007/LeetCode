@@ -14,6 +14,7 @@
 #include "Solution14.h"
 #include "Solution15.h"
 #include "Solution20.h"
+#include "Solution35.h"
 #include "Solution38.h"
 #include "Solution50.h"
 
@@ -63,22 +64,19 @@ int main(){
 //    vtStr.push_back("c");
 //    cout<<longestCommonPrefix(vtStr)<<endl;
 
-//    int a[9] = {-1, 0, -1, 1, 2, -4, 0, -2, 1};
-//    vector<int> vtArr;
-//    for(int i = 0; i < sizeof(a)/sizeof(int); i++){
-//        vtArr.push_back(a[i]);
-//    }
+    int a[] = {1,2,5,10};
+    vector<int> vtArr;
+    for(int i = 0; i < sizeof(a)/sizeof(int); i++){
+        vtArr.push_back(a[i]);
+    }
 //    threeSum(vtArr);
 
 //    string str = "{[]}";
 //    cout<<isValid(str)<<endl;
 
-//    cout<<countAndSay(1)<<endl;
-    cout<<countAndSay(2)<<endl;
-//    cout<<countAndSay(3)<<endl;
 //    cout<<countAndSay(4)<<endl;
 
-
+    cout<<searchInsert(vtArr, 6)<<endl;
 
     cout << "Test End" << endl;
 
