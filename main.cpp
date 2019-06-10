@@ -14,6 +14,7 @@
 #include "Solution14.h"
 #include "Solution15.h"
 #include "Solution20.h"
+#include "Solution26.h"
 #include "Solution35.h"
 #include "Solution38.h"
 #include "Solution50.h"
@@ -64,7 +65,7 @@ int main(){
 //    vtStr.push_back("c");
 //    cout<<longestCommonPrefix(vtStr)<<endl;
 
-    int a[] = {1,2,5,10};
+    int a[] = {0,1,1,1,1,2,3};
     vector<int> vtArr;
     for(int i = 0; i < sizeof(a)/sizeof(int); i++){
         vtArr.push_back(a[i]);
@@ -76,7 +77,14 @@ int main(){
 
 //    cout<<countAndSay(4)<<endl;
 
-    cout<<searchInsert(vtArr, 6)<<endl;
+//    cout<<searchInsert(vtArr, 6)<<endl;
+
+    cout<<removeDuplicates(vtArr)<<endl;
+
+    for(vector<int>::iterator iter = vtArr.begin(); iter != vtArr.end(); iter++){
+        cout<<*iter<<" ";
+    }
+    cout<<endl;
 
     cout << "Test End" << endl;
 
