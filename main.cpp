@@ -15,6 +15,7 @@
 #include "Solution15.h"
 #include "Solution20.h"
 #include "Solution26.h"
+#include "Solution27.h"
 #include "Solution35.h"
 #include "Solution38.h"
 #include "Solution50.h"
@@ -79,7 +80,9 @@ int main(){
 
 //    cout<<searchInsert(vtArr, 6)<<endl;
 
-    cout<<removeDuplicates(vtArr)<<endl;
+//    cout<<removeDuplicates(vtArr)<<endl;
+
+    cout<<removeElement(vtArr, 1)<<endl;
 
     for(vector<int>::iterator iter = vtArr.begin(); iter != vtArr.end(); iter++){
         cout<<*iter<<" ";
