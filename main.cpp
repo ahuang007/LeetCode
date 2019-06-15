@@ -16,9 +16,11 @@
 #include "Solution20.h"
 #include "Solution26.h"
 #include "Solution27.h"
+#include "Solution28.h"
 #include "Solution35.h"
 #include "Solution38.h"
 #include "Solution50.h"
+#include "Solution58.h"
 
 using namespace std;
 
@@ -66,11 +68,12 @@ int main(){
 //    vtStr.push_back("c");
 //    cout<<longestCommonPrefix(vtStr)<<endl;
 
-    int a[] = {0,1,1,1,1,2,3};
-    vector<int> vtArr;
-    for(int i = 0; i < sizeof(a)/sizeof(int); i++){
-        vtArr.push_back(a[i]);
-    }
+//    int a[] = {0,1,1,1,1,2,3};
+//    vector<int> vtArr;
+//    for(int i = 0; i < sizeof(a)/sizeof(int); i++){
+//        vtArr.push_back(a[i]);
+//    }
+
 //    threeSum(vtArr);
 
 //    string str = "{[]}";
@@ -82,12 +85,11 @@ int main(){
 
 //    cout<<removeDuplicates(vtArr)<<endl;
 
-    cout<<removeElement(vtArr, 1)<<endl;
+//    cout<<removeElement(vtArr, 1)<<endl;
 
-    for(vector<int>::iterator iter = vtArr.begin(); iter != vtArr.end(); iter++){
-        cout<<*iter<<" ";
-    }
-    cout<<endl;
+//    cout<<strStr("zhangsan", "ang")<<endl;
+
+    cout<<lengthOfLastWord("a b cccc ")<<endl;
 
     cout << "Test End" << endl;
 
