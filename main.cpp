@@ -21,6 +21,7 @@
 #include "Solution38.h"
 #include "Solution50.h"
 #include "Solution58.h"
+#include "Solution66.h"
 
 using namespace std;
 
@@ -68,11 +69,11 @@ int main(){
 //    vtStr.push_back("c");
 //    cout<<longestCommonPrefix(vtStr)<<endl;
 
-//    int a[] = {0,1,1,1,1,2,3};
-//    vector<int> vtArr;
-//    for(int i = 0; i < sizeof(a)/sizeof(int); i++){
-//        vtArr.push_back(a[i]);
-//    }
+    int a[] = {9,9,9};
+    vector<int> vtArr;
+    for(int i = 0; i < sizeof(a)/sizeof(int); i++){
+        vtArr.push_back(a[i]);
+    }
 
 //    threeSum(vtArr);
 
@@ -89,7 +90,14 @@ int main(){
 
 //    cout<<strStr("zhangsan", "ang")<<endl;
 
-    cout<<lengthOfLastWord("a b cccc ")<<endl;
+//    cout<<lengthOfLastWord("a b cccc ")<<endl;
+
+    plusOne(vtArr);
+
+    for(int i = 0; i < vtArr.size(); i++){
+        cout<<vtArr[i]<<" ";
+    }
+    cout<<endl;
 
     cout << "Test End" << endl;
 
