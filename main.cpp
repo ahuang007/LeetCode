@@ -24,6 +24,7 @@
 #include "Solution66.h"
 #include "Solution67.h"
 #include "Solution69.h"
+#include "Solution70.h"
 
 using namespace std;
 
@@ -92,16 +93,10 @@ int main(){
 
 //    cout<<addBinary("101", "111")<<endl;
 
-    cout<<mySqrt(2147483647)<<endl;
-    cout<<mySqrt(0)<<endl;
-    cout<<mySqrt(1)<<endl;
-    cout<<mySqrt(2)<<endl;
-    cout<<mySqrt(3)<<endl;
-    cout<<mySqrt(4)<<endl;
-    cout<<mySqrt(5)<<endl;
-    cout<<mySqrt(6)<<endl;
-    cout<<mySqrt(9)<<endl;
-    cout<<mySqrt(267)<<endl;
+//    cout<<mySqrt(2)<<endl;
+
+    cout<<climbStairs(10)<<endl;
+    cout<<climbStairs2(30)<<endl;
 //    int a[] = {9,9,9};
 //    vector<int> vtArr;
 //    for(int i = 0; i < sizeof(a)/sizeof(int); i++){
