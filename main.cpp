@@ -17,6 +17,7 @@
 #include "Solution26.h"
 #include "Solution27.h"
 #include "Solution28.h"
+#include "Solution29.h"
 #include "Solution35.h"
 #include "Solution38.h"
 #include "Solution50.h"
@@ -95,8 +96,11 @@ int main(){
 
 //    cout<<mySqrt(2)<<endl;
 
-    cout<<climbStairs(10)<<endl;
-    cout<<climbStairs2(30)<<endl;
+//    cout<<climbStairs(10)<<endl;
+
+    //cout<<divide(-10, 3)<<endl;
+    cout<<divide(-2147483648, -2)<<endl;
+
 //    int a[] = {9,9,9};
 //    vector<int> vtArr;
 //    for(int i = 0; i < sizeof(a)/sizeof(int); i++){
