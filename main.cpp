@@ -18,6 +18,7 @@
 #include "Solution27.h"
 #include "Solution28.h"
 #include "Solution29.h"
+#include "Solution31.h"
 #include "Solution35.h"
 #include "Solution38.h"
 #include "Solution50.h"
@@ -98,19 +99,22 @@ int main(){
 
 //    cout<<climbStairs(10)<<endl;
 
-    //cout<<divide(-10, 3)<<endl;
-    cout<<divide(-2147483648, -2)<<endl;
+//    cout<<divide(-2147483648, -2)<<endl;
 
-//    int a[] = {9,9,9};
-//    vector<int> vtArr;
-//    for(int i = 0; i < sizeof(a)/sizeof(int); i++){
-//        vtArr.push_back(a[i]);
-//    }
+//    int a[] = {4,2,0,2,3,2,0};
 
-//    for(int i = 0; i < vtArr.size(); i++){
-//        cout<<vtArr[i]<<" ";
-//    }
-//    cout<<endl;
+    int a[] = {1,3,2};
+    vector<int> vtArr;
+    for(int i = 0; i < sizeof(a)/sizeof(int); i++){
+        vtArr.push_back(a[i]);
+    }
+
+    nextPermutation(vtArr);
+
+    for(int i = 0; i < vtArr.size(); i++){
+        cout<<vtArr[i]<<" ";
+    }
+    cout<<endl;
 
     cout << "Test End" << endl;
 
