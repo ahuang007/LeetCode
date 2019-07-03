@@ -22,6 +22,7 @@
 #include "Solution35.h"
 #include "Solution38.h"
 #include "Solution50.h"
+#include "Solution55.h"
 #include "Solution58.h"
 #include "Solution66.h"
 #include "Solution67.h"
@@ -101,15 +102,17 @@ int main(){
 
 //    cout<<divide(-2147483648, -2)<<endl;
 
-//    int a[] = {4,2,0,2,3,2,0};
+    int a[] = {0};
 
-    int a[] = {1,3,2};
+//    int a[] = {3,2,1,0,4};
     vector<int> vtArr;
     for(int i = 0; i < sizeof(a)/sizeof(int); i++){
         vtArr.push_back(a[i]);
     }
 
-    nextPermutation(vtArr);
+//    nextPermutation(vtArr);
+
+    cout<<canJump(vtArr)<<endl;
 
     for(int i = 0; i < vtArr.size(); i++){
         cout<<vtArr[i]<<" ";
