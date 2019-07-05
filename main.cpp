@@ -24,6 +24,7 @@
 #include "Solution50.h"
 #include "Solution55.h"
 #include "Solution58.h"
+#include "Solution60.h"
 #include "Solution66.h"
 #include "Solution67.h"
 #include "Solution69.h"
@@ -102,22 +103,22 @@ int main(){
 
 //    cout<<divide(-2147483648, -2)<<endl;
 
-    int a[] = {0};
+    cout<<getPermutation(4, 9)<<endl;
 
 //    int a[] = {3,2,1,0,4};
-    vector<int> vtArr;
-    for(int i = 0; i < sizeof(a)/sizeof(int); i++){
-        vtArr.push_back(a[i]);
-    }
+//    vector<int> vtArr;
+//    for(int i = 0; i < sizeof(a)/sizeof(int); i++){
+//        vtArr.push_back(a[i]);
+//    }
 
 //    nextPermutation(vtArr);
 
-    cout<<canJump(vtArr)<<endl;
+//    cout<<canJump(vtArr)<<endl;
 
-    for(int i = 0; i < vtArr.size(); i++){
-        cout<<vtArr[i]<<" ";
-    }
-    cout<<endl;
+//    for(int i = 0; i < vtArr.size(); i++){
+//        cout<<vtArr[i]<<" ";
+//    }
+//    cout<<endl;
 
     cout << "Test End" << endl;
 
