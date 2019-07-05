@@ -47,6 +47,7 @@ string getPermutation(int n, int k) {
     }
 
     int count = 1;
+	// fixme: 目前是调用Solution38中的getNextPermutation方法 待优化
     while(count < k){
         for (int i = n - 1; i >= 0; i--) {
             bool flag = false;
