@@ -29,6 +29,7 @@
 #include "Solution67.h"
 #include "Solution69.h"
 #include "Solution70.h"
+#include "Solution136.h"
 
 using namespace std;
 
@@ -103,17 +104,19 @@ int main(){
 
 //    cout<<divide(-2147483648, -2)<<endl;
 
-    cout<<getPermutation(4, 9)<<endl;
+//    cout<<getPermutation(4, 9)<<endl;
 
-//    int a[] = {3,2,1,0,4};
-//    vector<int> vtArr;
-//    for(int i = 0; i < sizeof(a)/sizeof(int); i++){
-//        vtArr.push_back(a[i]);
-//    }
+    int a[] = {2,2,1};
+    vector<int> vtArr;
+    for(int i = 0; i < sizeof(a)/sizeof(int); i++){
+        vtArr.push_back(a[i]);
+    }
 
 //    nextPermutation(vtArr);
-
+//
 //    cout<<canJump(vtArr)<<endl;
+
+    cout<<singleNumber(vtArr)<<endl;
 
 //    for(int i = 0; i < vtArr.size(); i++){
 //        cout<<vtArr[i]<<" ";
