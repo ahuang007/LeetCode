@@ -28,7 +28,7 @@ Output: 4
 // fixme: 有重复比较的 待优化
 // 优化1： 先排序 然后可以不用重复比较
 
-int singleNumber(vector<int>& nums) {
+int singleNumber1(vector<int>& nums) {
     int len  = nums.size();
     if(len <= 0) return 0;
     if(len == 1) return nums[0];
@@ -51,6 +51,40 @@ int singleNumber(vector<int>& nums) {
         }
     }
     return num;
+}
+
+int singleNumber(vector<int>& nums) {
+    int len  = nums.size();
+    if(len <= 0) return 0;
+    if(len == 1) return nums[0];
+
+    sort(nums.begin(), nums.end());
+
+    int pos = 0;
+    int tmpNum = 0;
+    while(pos < len){
+        tmpNum = nums[pos];
+
+        bool flag = false;
+        int i = pos+1;
+        for(; i < len; i++){
+            if(nums[i] == tmpNum){
+                pos++;
+                flag = true;
+                continue;
+            } else {
+                break;
+            }
+        }
+
+        if(!flag){
+            return tmpNum;
+        } else {
+            pos++;
+        }
+    }
+
+    return 0;
 }
 
 #endif //TESTCODE_SOLUTION136_H

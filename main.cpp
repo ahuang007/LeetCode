@@ -106,7 +106,7 @@ int main(){
 
 //    cout<<getPermutation(4, 9)<<endl;
 
-    int a[] = {2,2,1};
+    int a[] = {4,2,1,2,1};
     vector<int> vtArr;
     for(int i = 0; i < sizeof(a)/sizeof(int); i++){
         vtArr.push_back(a[i]);
