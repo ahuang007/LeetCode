@@ -29,6 +29,7 @@
 #include "Solution67.h"
 #include "Solution69.h"
 #include "Solution70.h"
+#include "Solution125.h"
 #include "Solution136.h"
 
 using namespace std;
@@ -106,17 +107,20 @@ int main(){
 
 //    cout<<getPermutation(4, 9)<<endl;
 
-    int a[] = {4,2,1,2,1};
-    vector<int> vtArr;
-    for(int i = 0; i < sizeof(a)/sizeof(int); i++){
-        vtArr.push_back(a[i]);
-    }
+    cout<<isPalindrome("0p")<<endl;
+
+//    int a[] = {4,2,1,2,1};
+//    vector<int> vtArr;
+//    for(int i = 0; i < sizeof(a)/sizeof(int); i++){
+//        vtArr.push_back(a[i]);
+//    }
 
 //    nextPermutation(vtArr);
 //
 //    cout<<canJump(vtArr)<<endl;
 
-    cout<<singleNumber(vtArr)<<endl;
+//    cout<<singleNumber(vtArr)<<endl;
+
 
 //    for(int i = 0; i < vtArr.size(); i++){
 //        cout<<vtArr[i]<<" ";
