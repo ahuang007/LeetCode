@@ -22,6 +22,14 @@ Output: false
 #ifndef TESTCODE_SOLUTION125_H
 #define TESTCODE_SOLUTION125_H
 
+/*
+ascii码
+ 0-9  48-57
+ A-Z  65-90
+ a-z  97-122
+ a-A = 32
+ */
+
 bool isPalindrome(string s) {
     int slen = s.size();
     if(slen <= 1) return true;
