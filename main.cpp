@@ -29,6 +29,7 @@
 #include "Solution67.h"
 #include "Solution69.h"
 #include "Solution70.h"
+#include "Solution118.h"
 #include "Solution125.h"
 #include "Solution136.h"
 #include "Solution137.h"
@@ -109,6 +110,8 @@ int main(){
 //    cout<<getPermutation(4, 9)<<endl;
 
 //    cout<<isPalindrome("0p")<<endl;
+
+    generate(8);
 
     int a[] = {4,2,1,2,1,2,1};
     vector<int> vtArr;
