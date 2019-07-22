@@ -31,10 +31,18 @@
 #include "Solution70.h"
 #include "Solution118.h"
 #include "Solution125.h"
+#include "Solution130.h"
 #include "Solution136.h"
 #include "Solution137.h"
 
 using namespace std;
+
+void PrintVector(vector<int>& vt){
+    int n = vt.size();
+    for(int i = 0; i < n; i++)
+        cout<<vt[i]<<" ";
+    cout<<endl;
+}
 
 int main(){
     cout << "Test Start" << endl;
@@ -111,13 +119,13 @@ int main(){
 
 //    cout<<isPalindrome("0p")<<endl;
 
-    generate(8);
+//    generate(8);
 
-    int a[] = {4,2,1,2,1,2,1};
-    vector<int> vtArr;
-    for(int i = 0; i < sizeof(a)/sizeof(int); i++){
-        vtArr.push_back(a[i]);
-    }
+//    int a[] = {4,2,1,2,1,2,1};
+//    vector<int> vtArr;
+//    for(int i = 0; i < sizeof(a)/sizeof(int); i++){
+//        vtArr.push_back(a[i]);
+//    }
 
 //    nextPermutation(vtArr);
 //
@@ -125,12 +133,32 @@ int main(){
 
 //    cout<<singleNumber(vtArr)<<endl;
 
-    cout<<singleNumber3(vtArr)<<endl;
+//    cout<<singleNumber3(vtArr)<<endl;
 
 //    for(int i = 0; i < vtArr.size(); i++){
 //        cout<<vtArr[i]<<" ";
 //    }
 //    cout<<endl;
+
+    char cArr[16] = {
+            'x', 'x', 'x', 'x',
+            'x', 'o', 'x', 'x',
+            'x', 'x', 'x', 'x',
+            'x', 'o', 'x', 'x'};
+    vector< vector<char> > board;
+    for(int i = 0; i < 4; i++){
+        vector<char> vtChar;
+        for(int j = 0; j < 4; j++){
+            vtChar.push_back(cArr[i*4+j]);
+        }
+        board.push_back(vtChar);
+    }
+
+    PrintBoard(board);
+
+    solve(board);
+
+    PrintBoard(board);
 
     cout << "Test End" << endl;
 
