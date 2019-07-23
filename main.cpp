@@ -34,10 +34,20 @@
 #include "Solution130.h"
 #include "Solution136.h"
 #include "Solution137.h"
+#include "Solution342.h"
+#include "Solution344.h"
 
 using namespace std;
 
-void PrintVector(vector<int>& vt){
+template <typename T>
+void InitVecotr(vector<T> &vt, T arr[], int n){
+    for(int i = 0; i < n; i++){
+        vt.push_back(arr[i]);
+    }
+}
+
+template<typename T>
+void PrintVector(vector<T>& vt){
     int n = vt.size();
     for(int i = 0; i < n; i++)
         cout<<vt[i]<<" ";
@@ -140,6 +150,7 @@ int main(){
 //    }
 //    cout<<endl;
 
+/* // test 130
     char cArr[16] = {
             'x', 'x', 'x', 'x',
             'x', 'o', 'x', 'x',
@@ -159,6 +170,15 @@ int main(){
     solve(board);
 
     PrintBoard(board);
+*/
+
+//    cout<<isPowerOfFour(16)<<endl;
+
+    char cArr[] = {'a', 'b', 'c', 'd', 'e', 'f'};
+    vector<char> vt;
+    InitVecotr(vt, cArr, sizeof(cArr)/sizeof(char));
+    reverseString(vt);
+    PrintVector(vt);
 
     cout << "Test End" << endl;
 
