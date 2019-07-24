@@ -23,6 +23,7 @@ Note: You may assume that n is not less than 2 and not larger than 58.
 #ifndef TESTCODE_SOLUTION343_H
 #define TESTCODE_SOLUTION343_H
 
+
 // 查表法：空间换时间
 int integerBreak(int n) {
     if(n < 2 || n > 58) return 0;
@@ -87,6 +88,37 @@ int integerBreak(int n) {
     mp[58] = 1549681956;
 
     return mp[n];
+}
+
+// 这个函数是用递归计算值的 本身因为超时不符合需求 但是计算结果是正确的
+// 优化策略： mp作为全局数据 计算过的就查表 没有计算过的则递归计算 计算完后将结果添加到表中
+int integerBreak_timeout(int n) {
+    if(n < 2 || n > 58) return 0;
+
+    map<int, int> mp;
+    mp[2] = 1;
+    mp[3] = 2;
+    mp[4] = 4;
+
+    int max = n;
+    if(n <= 4){
+        return mp[n];
+    } else {
+        for(int i = 4; i <= n/2; i++){
+            int j = n-i;
+            if(j >= i) {
+                int a = i <= 4 ? i : integerBreak(i);
+                int b = j <= 4 ? j : integerBreak(j);
+                int tmp = a * b;
+                if (tmp > max) {
+                    max = tmp;
+                }
+            } else {
+                break;
+            }
+        }
+    }
+    return max;
 }
 
 #endif //TESTCODE_SOLUTION343_H
