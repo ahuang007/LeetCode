@@ -35,6 +35,7 @@
 #include "Solution136.h"
 #include "Solution137.h"
 #include "Solution342.h"
+#include "Solution343.h"
 #include "Solution344.h"
 #include "Solution345.h"
 
@@ -181,7 +182,11 @@ int main(){
 //    reverseString(vt);
 //    PrintVector(vt);
 
-    cout<<reverseVowels("gateio")<<endl;
+//    cout<<reverseVowels("gateio")<<endl;
+
+    for(int i = 2; i <= 58; i++){
+        cout<<integerBreak(i)<<endl;
+    }
 
     cout << "Test End" << endl;
 
