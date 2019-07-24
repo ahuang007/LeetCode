@@ -36,6 +36,7 @@
 #include "Solution137.h"
 #include "Solution342.h"
 #include "Solution344.h"
+#include "Solution345.h"
 
 using namespace std;
 
@@ -174,11 +175,13 @@ int main(){
 
 //    cout<<isPowerOfFour(16)<<endl;
 
-    char cArr[] = {'a', 'b', 'c', 'd', 'e', 'f'};
-    vector<char> vt;
-    InitVecotr(vt, cArr, sizeof(cArr)/sizeof(char));
-    reverseString(vt);
-    PrintVector(vt);
+//    char cArr[] = {'a', 'b', 'c', 'd', 'e', 'f'};
+//    vector<char> vt;
+//    InitVecotr(vt, cArr, sizeof(cArr)/sizeof(char));
+//    reverseString(vt);
+//    PrintVector(vt);
+
+    cout<<reverseVowels("gateio")<<endl;
 
     cout << "Test End" << endl;
 
