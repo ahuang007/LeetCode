@@ -90,34 +90,35 @@ int integerBreak(int n) {
     return mp[n];
 }
 
-// 这个函数是用递归计算值的 本身因为超时不符合需求 但是计算结果是正确的
-// 优化策略： mp作为全局数据 计算过的就查表 没有计算过的则递归计算 计算完后将结果添加到表中
+// 此方法是用递归法计算的 本身也是符合需求的 只是比查表法慢
 int integerBreak_timeout(int n) {
     if(n < 2 || n > 58) return 0;
 
-    map<int, int> mp;
+    static map<int, int> mp;
     mp[2] = 1;
     mp[3] = 2;
     mp[4] = 4;
 
-    int max = n;
-    if(n <= 4){
+    if(mp.find(n) != mp.end()){
         return mp[n];
-    } else {
-        for(int i = 4; i <= n/2; i++){
-            int j = n-i;
-            if(j >= i) {
-                int a = i <= 4 ? i : integerBreak(i);
-                int b = j <= 4 ? j : integerBreak(j);
-                int tmp = a * b;
-                if (tmp > max) {
-                    max = tmp;
-                }
-            } else {
-                break;
+    }
+
+    int max = n;
+    for(int i = 2; i <= n/2; i++){
+        int j = n-i;
+        if(j >= i) {
+            int a = i <= 4 ? i : integerBreak(i);
+            int b = j <= 4 ? j : integerBreak(j);
+            int tmp = a * b;
+            if (tmp > max) {
+                max = tmp;
             }
+        } else {
+            break;
         }
     }
+
+    mp[n] = max;
     return max;
 }
 

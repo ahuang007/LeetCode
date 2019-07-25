@@ -34,6 +34,7 @@
 #include "Solution130.h"
 #include "Solution136.h"
 #include "Solution137.h"
+#include "Solution326.h"
 #include "Solution342.h"
 #include "Solution343.h"
 #include "Solution344.h"
@@ -184,9 +185,11 @@ int main(){
 
 //    cout<<reverseVowels("gateio")<<endl;
 
-    for(int i = 2; i <= 58; i++){
-        cout<<integerBreak(i)<<endl;
-    }
+//    for(int i = 2; i <= 58; i++){
+//        cout<<integerBreak_timeout(i)<<endl;
+//    }
+
+    cout<<isPowerOfThree(30)<<endl;
 
     cout << "Test End" << endl;
 
