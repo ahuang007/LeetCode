@@ -29,6 +29,7 @@
 #include "Solution67.h"
 #include "Solution69.h"
 #include "Solution70.h"
+#include "Solution91.h"
 #include "Solution118.h"
 #include "Solution125.h"
 #include "Solution130.h"
@@ -189,7 +190,11 @@ int main(){
 //        cout<<integerBreak_timeout(i)<<endl;
 //    }
 
-    cout<<isPowerOfThree(30)<<endl;
+//    cout<<isPowerOfThree(30)<<endl;
+
+//    cout<<numDecodings("7543229674715396218368325364163294258826933764994151395727178546319844199963267855648577635487721483")<<endl;
+    cout<<numDecodings("4561234561234")<<endl;
+
 
     cout << "Test End" << endl;
 
