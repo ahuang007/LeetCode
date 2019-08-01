@@ -28,7 +28,38 @@ Explanation: It could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6).
 #ifndef TESTCODE_SOLUTION91_H
 #define TESTCODE_SOLUTION91_H
 
+// 动态规划(num = num1 + num2)
 int numDecodings(string s) {
+    const int slen = s.size();
+    if(slen == 0 || s[0] == '0') return 0; // 首位是0 则不能正确解码
+
+    int num = 1;
+    int num1 = 1;
+    int num2 = 1;
+    for(int i = 1; i < slen; i++){
+        if(s[i] == '0'){
+            if(s[i-1] == '1' || s[i-1] == '2'){ // 二位数中尾数含0 10 20 才能正确解码 其他都不正确
+                num = num2;
+            } else {
+                return 0;
+            }
+        } else {
+            if(s[i-1] == '1' || (s[i-1] == '2' &&(s[i] > '0' && s[i] <= '6'))){ // 尾数不含0二位数 如果首位是1 或者 (首位是2且尾数为1-6) 则有2种解码方式 否则只有一种
+                num = num1 + num2;
+            } else {
+                num = num1;
+            }
+        }
+
+        num2 = num1;
+        num1 = num;
+    }
+
+    return num;
+}
+
+// 递归算法 结果对的 但是超时
+int numDecodings_timeout(string s) {
     int slen = s.size();
     if(slen <= 0) return 1;
     if(slen >= 1 && s[0] == '0') return 0;
@@ -75,7 +106,5 @@ int numDecodings(string s) {
     }
     return num;
 }
-
-//todo: 目前算法是对的 但是超时 待优化
 
 #endif //TESTCODE_SOLUTION91_H
