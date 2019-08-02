@@ -13,6 +13,7 @@
 #include "Solution13.h"
 #include "Solution14.h"
 #include "Solution15.h"
+#include "Solution16.h"
 #include "Solution20.h"
 #include "Solution26.h"
 #include "Solution27.h"
@@ -192,8 +193,12 @@ int main(){
 
 //    cout<<isPowerOfThree(30)<<endl;
 
-    cout<<numDecodings("7543229674715396218368325364163294258826933764994151395727178546319844199963267855648577635487721483")<<endl;
+//    cout<<numDecodings("75432296747153962183683253641632942588269337649941513957271785463198441999")<<endl;
 
+    int arr[4] = {-1,2,1,-4};
+    vector<int> vt;
+    InitVecotr(vt, arr, 4);
+    cout<<threeSumClosest(vt, 1)<<endl;
 
     cout << "Test End" << endl;
 
