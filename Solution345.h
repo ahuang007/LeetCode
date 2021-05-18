@@ -23,7 +23,7 @@ The vowels does not include the letter "y".
 #define TESTCODE_SOLUTION345_H
 
 string reverseVowels(string s) {
-    int slen = s.size();
+    int slen = (int)s.size();
     if(slen <= 1) return s;
 
     int sPos = 0;

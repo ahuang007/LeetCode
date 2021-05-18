@@ -57,7 +57,7 @@ bool isPalindrome(int x) {
         }
     }
 
-    int vt_size = vt.size();
+    int vt_size = (int)vt.size();
     for(int i = 0; i < vt_size/2; i++){
         if(vt[i] != vt[vt_size-1-i])
             return false;

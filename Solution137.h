@@ -25,7 +25,7 @@ Output: 99
 #define TESTCODE_SOLUTION137_H
 
 int singleNumber3(vector<int>& nums) {
-    int len  = nums.size();
+    int len  = (int)nums.size();
     if(len <= 0) return 0;
     if(len == 1) return nums[0];
 

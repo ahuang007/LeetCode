@@ -24,7 +24,7 @@ Explanation: The array represents the integer 4321.
  */
 
 vector<int> plusOne(vector<int>& digits) {
-    int len = digits.size();
+    int len = (int)digits.size();
     for(int i = len-1; i >= 0; i--){
         if(i == len - 1){
             digits[i]++;

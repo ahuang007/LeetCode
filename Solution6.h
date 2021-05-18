@@ -38,7 +38,7 @@ P     I
  */
 
 string convert(string s, int numRows) {
-    int slen = s.size();
+    int slen = (int)s.size();
     if(numRows <= 1 || numRows >= slen) return s;
 
     vector<char> vtChars;
@@ -63,7 +63,7 @@ string convert(string s, int numRows) {
         }
     }
 
-    int col = vtChars.size()/numRows;
+    int col = (int)(vtChars.size()/numRows);
     string rStr = "";
 
     for(int i = 0; i < numRows; i++){

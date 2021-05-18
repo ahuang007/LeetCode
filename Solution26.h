@@ -60,7 +60,7 @@ int removeDuplicates(vector<int>& nums) {
         if(beginIt == endIt){continue;}
         iter = nums.erase(beginIt, endIt);
     }
-    return nums.size();
+    return (int)nums.size();
 }
 
 #ifndef TESTCODE_SOLUTION26_H

@@ -22,8 +22,8 @@ Output: "10101"
 string addBinary(string a, string b) {
     string str = "";
 
-    int alen = a.size();
-    int blen = b.size();
+    int alen = (int)a.size();
+    int blen = (int)b.size();
     int len = alen > blen ? alen : blen;
     bool over = false;
     for(int i = 0; i < len; i++){

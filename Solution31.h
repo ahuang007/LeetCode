@@ -1,4 +1,4 @@
-//
+﻿//
 // Author: huanglijun 
 // Date  : 2019/6/21
 // Desc  : 31. Next Permutation
@@ -29,7 +29,7 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
 #define TESTCODE_SOLUTION31_H
 
 void nextPermutation(vector<int>& nums) {
-    int  vlen = nums.size();
+    int  vlen = (int)nums.size();
     if(vlen <= 1) return;
 
     for(int i = vlen-1; i >= 0; i--){

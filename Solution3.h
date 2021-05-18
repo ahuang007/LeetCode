@@ -35,18 +35,18 @@ Explanation: The answer is "wke", with the length of 3.
 
 int lengthOfLongestSubstring(string s) {
     int maxLen = 0;
-    int sz = s.size();
+    int sz = (int)s.size();
     for(int i = 0; i < sz; i++){
         string str = "";
         for(int j = i; j < sz; j++){
-            int n = str.find(s[j]);
+            int n = (int)str.find(s[j]);
             if(n == string::npos) { // -1
                 str += s[j];
             } else {
                 break;
             }
         }
-        maxLen = str.size() > maxLen ? str.size() : maxLen;
+        maxLen = (int)(str.size() > maxLen ? str.size() : maxLen);
         if(maxLen >= sz-i) break;
     }
     return maxLen;

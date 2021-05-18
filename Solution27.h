@@ -53,7 +53,7 @@ int removeElement(vector<int>& nums, int val) {
             iter++;
         }
     }
-    return nums.size();
+    return (int)nums.size();
 }
 
 #ifndef TESTCODE_SOLUTION27_H

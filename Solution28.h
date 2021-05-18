@@ -25,8 +25,8 @@ For the purpose of this problem, we will return 0 when needle is an empty string
  */
 
 int strStr(string haystack, string needle) {
-    int s1 = haystack.size();
-    int s2 = needle.size();
+    int s1 = (int)haystack.size();
+    int s2 = (int)needle.size();
     if(s2 <= 0) return 0;
     if(s1 < s2) return -1;
 

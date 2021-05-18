@@ -1,4 +1,4 @@
-//
+﻿//
 // Author: huanglijun 
 // Date  : 2019/7/8
 // Desc  : 136. Single Number
@@ -29,7 +29,7 @@ Output: 4
 // 优化1： 先排序 然后可以不用重复比较
 
 int singleNumber1(vector<int>& nums) {
-    int len  = nums.size();
+    int len  = (int)nums.size();
     if(len <= 0) return 0;
     if(len == 1) return nums[0];
 
@@ -54,7 +54,7 @@ int singleNumber1(vector<int>& nums) {
 }
 
 int singleNumber(vector<int>& nums) {
-    int len  = nums.size();
+    int len  = (int)nums.size();
     if(len <= 0) return 0;
     if(len == 1) return nums[0];
 

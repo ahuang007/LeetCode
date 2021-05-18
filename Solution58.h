@@ -18,7 +18,7 @@ Output: 5
  */
 
 int lengthOfLastWord(string s) {
-    int len = s.size();
+    int len = (int)s.size();
     int num = 0;
     bool exist = false;
     for(int i = len-1; i >= 0; i--){

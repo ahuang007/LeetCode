@@ -18,7 +18,7 @@ The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 #define TESTCODE_SOLUTION16_H
 
 int threeSumClosest(vector<int>& nums, int target) {
-    int len = nums.size();
+    int len = (int)nums.size();
     if(len < 3) return 0;
 
     int sum = 0;

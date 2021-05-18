@@ -37,7 +37,7 @@ Output: true
  */
 
 bool isValid(string s) {
-    int slen = s.size();
+    int slen = (int)s.size();
     if(slen <= 0){
         return true;
     } else if(slen%2 != 0){

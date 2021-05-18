@@ -68,49 +68,49 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
 int romanToInt(string s) {
     int num = 0;
-    int slen = s.size();
+    int slen = (int)s.size();
     if(slen <= 0) return num;
 
     char c = 'I';
-    int pos = string::npos;
+    int pos = (int)string::npos;
     while(true){
-        pos = s.find('M');
+        pos = (int)s.find('M');
         if(pos != string::npos){
             num += 1000;
             break;
         }
 
-        pos = s.find('D');
+        pos = (int)s.find('D');
         if(pos != string::npos){
             num += 500;
             break;
         }
 
-        pos = s.find('C');
+        pos = (int)s.find('C');
         if(pos != string::npos){
             num += 100;
             break;
         }
 
-        pos = s.find('L');
+        pos = (int)s.find('L');
         if(pos != string::npos){
             num += 50;
             break;
         }
 
-        pos = s.find('X');
+        pos = (int)s.find('X');
         if(pos != string::npos){
             num += 10;
             break;
         }
 
-        pos = s.find('V');
+        pos = (int)s.find('V');
         if(pos != string::npos){
             num += 5;
             break;
         }
 
-        pos = s.find('I');
+        pos = (int)s.find('I');
         if(pos != string::npos){
             num += 1;
             break;

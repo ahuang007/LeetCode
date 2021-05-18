@@ -28,7 +28,7 @@ Output: "bb"
  */
 
 string longestPalindrome(string s) {
-    int slen = s.size();
+    int slen = (int)s.size();
     if(slen <= 1) return s;
 
     string retStr = "";

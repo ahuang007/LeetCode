@@ -33,7 +33,7 @@ Explanation: There are three ways to climb to the top.
 
 int climbStairs(int n) {
     if(n <= 0) return 0;
-    int cs[n+1];
+    int* cs = new int[(uint64_t)n+1];
     cs[0] = 1;
     cs[1] = 2;
     for (int i = 2; i < n; i++) {

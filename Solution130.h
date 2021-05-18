@@ -30,9 +30,9 @@ Surrounded regions shouldn’t be on the border, which means that any 'O' on the
 #define TESTCODE_SOLUTION130_H
 
 void solve(vector< vector<char> >& board) {
-    int m = board.size();
+    int m = (int)board.size();
     for(int i = 0; i < m; i++){
-        int n = board[i].size();
+        int n = (int)board[i].size();
         for(int j = 0; j < n; j++){
             if(board[i][j] == 'o'){
 //                if(){
@@ -44,9 +44,9 @@ void solve(vector< vector<char> >& board) {
 }
 
 void PrintBoard(vector< vector<char> >& board){
-    int m = board.size();
+    int m = (int)board.size();
     for(int i = 0; i < m; i++){
-        int n = board[i].size();
+        int n = (int)board[i].size();
         for(int j = 0; j < n; j++){
             cout<<board[i][j]<<" ";
         }

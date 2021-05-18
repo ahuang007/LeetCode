@@ -51,7 +51,7 @@ int reverse(int x) {
     }
 
     double num = 0;
-    int vt_size = vt.size();
+    int vt_size = (int)vt.size();
 
     for(int i = 0; i < vt_size; i++){
         cout<<vt[i]<<" "<<i<<endl;

@@ -28,7 +28,7 @@ Explanation: You will always arrive at index 3 no matter what. Its maximum
 #define TESTCODE_SOLUTION55_H
 
 bool canJump(vector<int>& nums) {
-    int len = nums.size();
+    int len = (int)nums.size();
     if(len <= 1) return true;
 
     bool flag = true;

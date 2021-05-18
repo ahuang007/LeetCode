@@ -1,4 +1,4 @@
-//
+﻿//
 // Author: huanglijun 
 // Date  : 2019/7/9
 // Desc  : 125. Valid Palindrome
@@ -31,7 +31,7 @@ ascii码
  */
 
 bool isPalindrome(string s) {
-    int slen = s.size();
+    int slen = (int)s.size();
     if(slen <= 1) return true;
 
     int sPos = 0;

@@ -27,7 +27,7 @@ Output: ["h","a","n","n","a","H"]
 #define TESTCODE_SOLUTION344_H
 
 void reverseString(vector<char>& s) {
-    int slen = s.size();
+    int slen = (int)s.size();
     if(slen <= 1) return;
 
     for(int i = 0; i < slen/2; i++){

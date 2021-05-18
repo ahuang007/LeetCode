@@ -1,5 +1,4 @@
-
-#ifndef TESTCODE_SOLUTION4_H
+﻿#ifndef TESTCODE_SOLUTION4_H
 #define TESTCODE_SOLUTION4_H
 
 /*

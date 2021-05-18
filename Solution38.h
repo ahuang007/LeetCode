@@ -1,4 +1,4 @@
-//
+﻿//
 // Author: huanglijun 
 // Date  : 2019/6/1
 // Desc  : Solution38
@@ -42,7 +42,7 @@ string countAndSay(int n) {
 
     string str = "1";
     for(int i = 2; i <= n; i++){
-        int slen = str.size();
+        int slen = (int)str.size();
         stringstream newStr;
         int count = 0;
         char c = str[0];

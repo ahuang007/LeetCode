@@ -1,4 +1,4 @@
-//
+﻿//
 // Author: huanglijun 
 // Date  : 2019/7/26
 // Desc  : 91. Decode Ways
@@ -30,7 +30,7 @@ Explanation: It could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6).
 
 // 动态规划(num = num1 + num2)
 int numDecodings(string s) {
-    const int slen = s.size();
+    const int slen = (int)s.size();
     if(slen == 0 || s[0] == '0') return 0; // 首位是0 则不能正确解码
 
     int num = 1;
@@ -60,7 +60,7 @@ int numDecodings(string s) {
 
 // 递归算法 结果对的 但是超时
 int numDecodings_timeout(string s) {
-    int slen = s.size();
+    int slen = (int)s.size();
     if(slen <= 0) return 1;
     if(slen >= 1 && s[0] == '0') return 0;
     if(slen >= 2 && (s[1] == '0' && s[0] > '2')) return 0;

@@ -22,7 +22,7 @@ return [0, 1].
 
 vector<int> twoSum(vector<int>& nums, int target) {
 	vector<int> vi;
-	int size = nums.size();
+	int size = (int)nums.size();
 	bool bResult = false;
 	for(int i = 0; i < size-1; i++){
 		for(int j = i+1 ; j < size; j++){
