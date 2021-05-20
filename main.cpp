@@ -37,6 +37,7 @@
 #include "Solution130.h"
 #include "Solution136.h"
 #include "Solution137.h"
+#include "Solution191.h"
 #include "Solution326.h"
 #include "Solution342.h"
 #include "Solution343.h"
@@ -196,10 +197,13 @@ int main(){
 
 //    cout<<numDecodings("75432296747153962183683253641632942588269337649941513957271785463198441999")<<endl;
 
-    int arr[4] = {-1,2,1,-4};
-    vector<int> vt;
-    InitVecotr(vt, arr, 4);
-    cout<<threeSumClosest(vt, 1)<<endl;
+    //int arr[4] = {-1,2,1,-4};
+    //vector<int> vt;
+    //InitVecotr(vt, arr, 4);
+    //cout<<threeSumClosest(vt, 1)<<endl;
+
+    uint32_t a = 7;
+    cout << hammingWeight(a) << endl;
 
     cout << "Test End" << endl;
 
