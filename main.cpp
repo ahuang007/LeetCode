@@ -37,6 +37,7 @@
 #include "Solution130.h"
 #include "Solution136.h"
 #include "Solution137.h"
+#include "Solution146.h"
 #include "Solution191.h"
 #include "Solution326.h"
 #include "Solution342.h"
@@ -202,8 +203,22 @@ int main(){
     //InitVecotr(vt, arr, 4);
     //cout<<threeSumClosest(vt, 1)<<endl;
 
-    uint32_t a = 7;
-    cout << hammingWeight(a) << endl;
+    //uint32_t a = 7;
+    //cout << hammingWeight(a) << endl;
+    
+    int capacity = 2;
+    LRUCache* pCache = new LRUCache(capacity);
+
+    pCache->put(1, 1);
+    pCache->put(2, 2);
+    cout << pCache->get(1) << endl;
+
+    pCache->put(3, 3);
+    cout << pCache->get(2) << endl;
+    pCache->put(4, 4);
+    cout << pCache->get(1) << endl;;
+    cout << pCache->get(3) << endl;;
+    cout << pCache->get(4) << endl;;
 
     cout << "Test End" << endl;
 
