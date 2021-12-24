@@ -5,7 +5,9 @@
 #include <algorithm>
 
 #include "Solution1.h"
+#include "Solution2.h"
 #include "Solution3.h"
+#include "Solution4.h"
 #include "Solution5.h"
 #include "Solution6.h"
 #include "Solution7.h"
@@ -206,6 +208,7 @@ int main(){
     //uint32_t a = 7;
     //cout << hammingWeight(a) << endl;
     
+    /*
     int capacity = 2;
     LRUCache* pCache = new LRUCache(capacity);
 
@@ -219,6 +222,12 @@ int main(){
     cout << pCache->get(1) << endl;;
     cout << pCache->get(3) << endl;;
     cout << pCache->get(4) << endl;;
+    */
+
+    vector<int> v1 = { 1,3,7 };
+    vector<int> v2 = { 2,4 };
+    Solution4* pS4 = new Solution4();
+    cout << pS4->findMedianSortedArrays(v1, v2) << endl;
 
     cout << "Test End" << endl;
 

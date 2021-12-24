@@ -28,10 +28,10 @@ Output: ["h","a","n","n","a","H"]
 
 void reverseString(vector<char>& s) {
     int slen = (int)s.size();
-    if(slen <= 1) return;
+    if (slen <= 1) return;
 
-    for(int i = 0; i < slen/2; i++){
-        int j = (slen-1) - i;
+    for (int i = 0; i < slen / 2; i++) {
+        int j = (slen - 1) - i;
         char tmp = s[i];
         s[i] = s[j];
         s[j] = tmp;
