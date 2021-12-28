@@ -13,6 +13,7 @@
 #include "Solution7.h"
 #include "Solution8.h"
 #include "Solution9.h"
+#include "Solution10.h"
 #include "Solution13.h"
 #include "Solution14.h"
 #include "Solution15.h"
@@ -65,7 +66,7 @@ void PrintVector(vector<T>& vt){
 }
 
 int main(){
-    cout << "Test Start" << endl;
+    cout << "============ Test Start ============" << endl;
 
 //    vector<int> vtArr;
 //    vtArr.push_back(0);
@@ -224,12 +225,22 @@ int main(){
     cout << pCache->get(4) << endl;;
     */
 
+    /*
     vector<int> v1 = { 1,3,7 };
     vector<int> v2 = { 2,4 };
     Solution4* pS4 = new Solution4();
     cout << pS4->findMedianSortedArrays(v1, v2) << endl;
+    */
 
-    cout << "Test End" << endl;
+    Solution10* pS10 = new Solution10();
+    cout << pS10->isMatch("aa", "a") << endl;
+    cout << pS10->isMatch("aa", "a*") << endl;
+    cout << pS10->isMatch("ab", ".*") << endl;
+    cout << pS10->isMatch("aaa", "a*a") << endl;
+    cout << pS10->isMatch2("aaa", "a*a") << endl;
+    cout << pS10->isMatch2("aaa", "a*a") << endl;
+
+    cout << "============ Test End ============" << endl;
 
     return 0;
 }
