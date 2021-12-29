@@ -14,6 +14,7 @@
 #include "Solution8.h"
 #include "Solution9.h"
 #include "Solution10.h"
+#include "Solution11.h"
 #include "Solution13.h"
 #include "Solution14.h"
 #include "Solution15.h"
@@ -232,6 +233,7 @@ int main(){
     cout << pS4->findMedianSortedArrays(v1, v2) << endl;
     */
 
+    /*
     Solution10* pS10 = new Solution10();
     cout << pS10->isMatch("aa", "a") << endl;
     cout << pS10->isMatch("aa", "a*") << endl;
@@ -239,6 +241,12 @@ int main(){
     cout << pS10->isMatch("aaa", "a*a") << endl;
     cout << pS10->isMatch2("aaa", "a*a") << endl;
     cout << pS10->isMatch2("aaa", "a*a") << endl;
+    */
+    
+    Solution11* pS11 = new Solution11();
+    //vector<int> vec({ 1,8,6,2,5,4,8,3,7 });
+    vector<int> vec({ 1,1 });
+    cout << pS11->maxArea1(vec) << endl;
 
     cout << "============ Test End ============" << endl;
 
