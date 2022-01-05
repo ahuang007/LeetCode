@@ -15,6 +15,7 @@
 #include "Solution9.h"
 #include "Solution10.h"
 #include "Solution11.h"
+#include "Solution12.h"
 #include "Solution13.h"
 #include "Solution14.h"
 #include "Solution15.h"
@@ -243,10 +244,15 @@ int main(){
     cout << pS10->isMatch2("aaa", "a*a") << endl;
     */
     
+    /*
     Solution11* pS11 = new Solution11();
     //vector<int> vec({ 1,8,6,2,5,4,8,3,7 });
     vector<int> vec({ 1,1 });
     cout << pS11->maxArea1(vec) << endl;
+    */
+
+    Solution12* pS12 = new Solution12();
+    cout << pS12->intToRoman(1994) << endl;
 
     cout << "============ Test End ============" << endl;
 
