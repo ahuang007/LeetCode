@@ -20,6 +20,7 @@
 #include "Solution14.h"
 #include "Solution15.h"
 #include "Solution16.h"
+#include "Solution17.h"
 #include "Solution20.h"
 #include "Solution26.h"
 #include "Solution27.h"
@@ -251,8 +252,17 @@ int main(){
     cout << pS11->maxArea1(vec) << endl;
     */
 
+    /*
     Solution12* pS12 = new Solution12();
     cout << pS12->intToRoman(1994) << endl;
+    */
+
+    Solution17* ps17 = new Solution17();
+    vector<string> vecstr = ps17->letterCombinations("23");
+    for (auto x : vecstr) {
+        cout << x << " ";
+    }
+    cout << endl;
 
     cout << "============ Test End ============" << endl;
 
