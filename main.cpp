@@ -2,7 +2,9 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <map>
 #include <algorithm>
+#include <set>
 
 #include "Solution1.h"
 #include "Solution2.h"
@@ -21,6 +23,7 @@
 #include "Solution15.h"
 #include "Solution16.h"
 #include "Solution17.h"
+#include "Solution18.h"
 #include "Solution20.h"
 #include "Solution26.h"
 #include "Solution27.h"
@@ -62,7 +65,7 @@ void InitVecotr(vector<T> &vt, T arr[], int n){
 
 template<typename T>
 void PrintVector(vector<T>& vt){
-    int n = vt.size();
+    int n = (int)vt.size();
     for(int i = 0; i < n; i++)
         cout<<vt[i]<<" ";
     cout<<endl;
@@ -70,199 +73,16 @@ void PrintVector(vector<T>& vt){
 
 int main(){
     cout << "============ Test Start ============" << endl;
-
-//    vector<int> vtArr;
-//    vtArr.push_back(0);
-//    vtArr.push_back(4);
-//    vtArr.push_back(3);
-//    vtArr.push_back(0);
-//    int target = 0;
-//    vector<int> vt2 = twoSum(vtArr, target);
-//    for(vector<int>::iterator iter = vt2.begin(); iter != vt2.end(); iter++){
-//        cout<<*iter<<endl;
-//    }
-
-//    string str = "aaaabbcdfghi";
-//    cout<<lengthOfLongestSubstring(str)<<endl;
-
-//    string str2 = "24 with";
-//    cout<<myAtoi(str2)<<endl;
-
-//    int x = 12321;
-//    cout<<"Slution9 result: "<<isPalindrome(x)<<endl;
-
-//    int x = 123;
-//    cout<<reverse(x)<<endl;
-
-//    string str = "abcdefghij";
-//    cout<<convert(str, 4)<<endl;
-
-//    cout<<myPow(2.000, 10)<<endl;
-
-//    cout<<longestPalindrome("abcba")<<endl;
-
-//    cout<<romanToInt("MCMXCIV")<<endl;
-
-//    vector<string> vtStr;
-//    vtStr.push_back("abcv");
-//    vtStr.push_back("abcd");
-//    vtStr.push_back("abcx");
-//    vtStr.push_back("abdf");
-//    vtStr.push_back("abx");
-//    vtStr.push_back("c");
-//    cout<<longestCommonPrefix(vtStr)<<endl;
-
-//    threeSum(vtArr);
-
-//    string str = "{[]}";
-//    cout<<isValid(str)<<endl;
-
-//    cout<<countAndSay(4)<<endl;
-
-//    cout<<searchInsert(vtArr, 6)<<endl;
-
-//    cout<<removeDuplicates(vtArr)<<endl;
-
-//    cout<<removeElement(vtArr, 1)<<endl;
-
-//    cout<<strStr("zhangsan", "ang")<<endl;
-
-//    cout<<lengthOfLastWord("a b cccc ")<<endl;
-
-//    plusOne(vtArr);
-
-//    cout<<addBinary("101", "111")<<endl;
-
-//    cout<<mySqrt(2)<<endl;
-
-//    cout<<climbStairs(10)<<endl;
-
-//    cout<<divide(-2147483648, -2)<<endl;
-
-//    cout<<getPermutation(4, 9)<<endl;
-
-//    cout<<isPalindrome("0p")<<endl;
-
-//    generate(8);
-
-//    int a[] = {4,2,1,2,1,2,1};
-//    vector<int> vtArr;
-//    for(int i = 0; i < sizeof(a)/sizeof(int); i++){
-//        vtArr.push_back(a[i]);
-//    }
-
-//    nextPermutation(vtArr);
-//
-//    cout<<canJump(vtArr)<<endl;
-
-//    cout<<singleNumber(vtArr)<<endl;
-
-//    cout<<singleNumber3(vtArr)<<endl;
-
-//    for(int i = 0; i < vtArr.size(); i++){
-//        cout<<vtArr[i]<<" ";
-//    }
-//    cout<<endl;
-
-/* // test 130
-    char cArr[16] = {
-            'x', 'x', 'x', 'x',
-            'x', 'o', 'x', 'x',
-            'x', 'x', 'x', 'x',
-            'x', 'o', 'x', 'x'};
-    vector< vector<char> > board;
-    for(int i = 0; i < 4; i++){
-        vector<char> vtChar;
-        for(int j = 0; j < 4; j++){
-            vtChar.push_back(cArr[i*4+j]);
-        }
-        board.push_back(vtChar);
-    }
-
-    PrintBoard(board);
-
-    solve(board);
-
-    PrintBoard(board);
-*/
-
-//    cout<<isPowerOfFour(16)<<endl;
-
-//    char cArr[] = {'a', 'b', 'c', 'd', 'e', 'f'};
-//    vector<char> vt;
-//    InitVecotr(vt, cArr, sizeof(cArr)/sizeof(char));
-//    reverseString(vt);
-//    PrintVector(vt);
-
-//    cout<<reverseVowels("gateio")<<endl;
-
-//    for(int i = 2; i <= 58; i++){
-//        cout<<integerBreak_timeout(i)<<endl;
-//    }
-
-//    cout<<isPowerOfThree(30)<<endl;
-
-//    cout<<numDecodings("75432296747153962183683253641632942588269337649941513957271785463198441999")<<endl;
-
-    //int arr[4] = {-1,2,1,-4};
-    //vector<int> vt;
-    //InitVecotr(vt, arr, 4);
-    //cout<<threeSumClosest(vt, 1)<<endl;
-
-    //uint32_t a = 7;
-    //cout << hammingWeight(a) << endl;
     
-    /*
-    int capacity = 2;
-    LRUCache* pCache = new LRUCache(capacity);
-
-    pCache->put(1, 1);
-    pCache->put(2, 2);
-    cout << pCache->get(1) << endl;
-
-    pCache->put(3, 3);
-    cout << pCache->get(2) << endl;
-    pCache->put(4, 4);
-    cout << pCache->get(1) << endl;;
-    cout << pCache->get(3) << endl;;
-    cout << pCache->get(4) << endl;;
-    */
-
-    /*
-    vector<int> v1 = { 1,3,7 };
-    vector<int> v2 = { 2,4 };
-    Solution4* pS4 = new Solution4();
-    cout << pS4->findMedianSortedArrays(v1, v2) << endl;
-    */
-
-    /*
-    Solution10* pS10 = new Solution10();
-    cout << pS10->isMatch("aa", "a") << endl;
-    cout << pS10->isMatch("aa", "a*") << endl;
-    cout << pS10->isMatch("ab", ".*") << endl;
-    cout << pS10->isMatch("aaa", "a*a") << endl;
-    cout << pS10->isMatch2("aaa", "a*a") << endl;
-    cout << pS10->isMatch2("aaa", "a*a") << endl;
-    */
+    auto* ps18 = new Solution18();
+    //vector<int> vec_int = { 1,0,-1,0,-2,2 };
+    vector<int> vec_int = { 2,2,2,2,2 };
+    //vector<int> vec_int = { -5, 5, 4, -3, 0, 0, 4, -2 };
     
-    /*
-    Solution11* pS11 = new Solution11();
-    //vector<int> vec({ 1,8,6,2,5,4,8,3,7 });
-    vector<int> vec({ 1,1 });
-    cout << pS11->maxArea1(vec) << endl;
-    */
-
-    /*
-    Solution12* pS12 = new Solution12();
-    cout << pS12->intToRoman(1994) << endl;
-    */
-
-    Solution17* ps17 = new Solution17();
-    vector<string> vecstr = ps17->letterCombinations("23");
-    for (auto x : vecstr) {
-        cout << x << " ";
+    auto vec_vec_int = ps18->fourSum(vec_int, 8);
+    for (auto& x : vec_vec_int) {
+        PrintVector(x);
     }
-    cout << endl;
 
     cout << "============ Test End ============" << endl;
 
