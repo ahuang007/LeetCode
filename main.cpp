@@ -26,6 +26,7 @@
 #include "Solution18.h"
 #include "Solution19.h"
 #include "Solution20.h"
+#include "Solution21.h"
 #include "Solution26.h"
 #include "Solution27.h"
 #include "Solution28.h"
