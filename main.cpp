@@ -78,7 +78,7 @@ int main(){
     cout << "============ Test Start ============" << endl;
     
     auto* p22 = new Solution22();
-    vector<string> vec_str = p22->generateParenthesis(3);
+    vector<string> vec_str = p22->generateParenthesis1(3);
     PrintVector(vec_str);
 
     cout << "============ Test End ============" << endl;
