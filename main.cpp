@@ -27,6 +27,7 @@
 #include "Solution19.h"
 #include "Solution20.h"
 #include "Solution21.h"
+#include "Solution22.h"
 #include "Solution26.h"
 #include "Solution27.h"
 #include "Solution28.h"
@@ -76,15 +77,9 @@ void PrintVector(vector<T>& vt){
 int main(){
     cout << "============ Test Start ============" << endl;
     
-    //auto* ps18 = new Solution18();
-    //vector<int> vec_int = { 1,0,-1,0,-2,2 };
-    //vector<int> vec_int = { 2,2,2,2,2 };
-    //vector<int> vec_int = { -5, 5, 4, -3, 0, 0, 4, -2 };
-    //
-    //auto vec_vec_int = ps18->fourSum(vec_int, 8);
-    //for (auto& x : vec_vec_int) {
-    //    PrintVector(x);
-    //}
+    auto* p22 = new Solution22();
+    vector<string> vec_str = p22->generateParenthesis(3);
+    PrintVector(vec_str);
 
     cout << "============ Test End ============" << endl;
 
